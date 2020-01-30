@@ -97,4 +97,12 @@ qqnorm(WATER_H) #Creates Q-Q plot against the normal distribution
 #S-Shape favoring right means right tail is thicker than normal distribution
 qqline(WATER_H) #Adds line through quantiles
 
+################# Comparisons #######################
+help("boxplot")
+boxplot(EPI,DALY)
+title("boxplot(EPI,DALY)")
+
+qqplot(EPI,DALY)
+title("qqplot(EPI,DALY)")
+
 detach(EPI_data)
