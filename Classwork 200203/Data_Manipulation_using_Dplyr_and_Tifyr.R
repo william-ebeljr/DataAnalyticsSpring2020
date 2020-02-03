@@ -2,6 +2,8 @@
 # Tidyr for Data Cleaning
 # Pipe Operator    %>% 
 
+####2/3/2020 - Pipe Operator stuff added at end####
+
 # Dplyr 
 install.packages('dplyr')
 # We will be using the NYC 2013 flights data during this examples, first install the package
