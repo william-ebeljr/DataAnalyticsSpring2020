@@ -52,7 +52,7 @@ mapcoord<-adduse[,c(2,3,24,25)]
 table(mapcoord$NEIGHBORHOOD)
 
 mapcoord$NEIGHBORHOOD <- as.factor(mapcoord$NEIGHBORHOOD)
-map <- get_map(location = c(lon=-73.8648,lat=40.8448), zoom = 12)#Zoom 11 or 12, had to get lat & lon
+map <- get_map(location = c(lon=-73.8648,lat=40.8448), zoom = 12)#Zoom 11 or 12, had to use lat & lon for location instead of 'bronx'
 ggmap(map) + geom_point(aes(x = mapcoord$Longitude, y = mapcoord$Latitude, size =1, color=mapcoord$NEIGHBORHOOD), data = mapcoord) +theme(legend.position = "none") 
 
 #It would be perfect if I can decrease the size of points 
